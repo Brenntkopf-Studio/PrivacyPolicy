@@ -29,15 +29,9 @@
   header .game { font-size: 14px; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
   h1 { font-size: 30px; margin: 8px 0 6px; line-height: 1.25; }
   .meta { color: var(--muted); font-size: 14px; }
-  .lang { display: flex; justify-content: center; gap: 8px; margin: 20px 0 8px; }
-  .lang button {
-    border: 1px solid var(--border); background: var(--card); color: var(--text);
-    padding: 8px 18px; border-radius: 999px; cursor: pointer; font-size: 14px; font-weight: 600;
-  }
-  .lang button.active { background: var(--accent); color: #fff; border-color: var(--accent); }
   .card {
     background: var(--card); border: 1px solid var(--border); border-radius: 14px;
-    padding: 24px 24px 8px; margin-top: 16px;
+    padding: 24px 24px 8px; margin-top: 24px;
   }
   .highlight { background: var(--soft); border-left: 4px solid var(--accent); border-radius: 10px; padding: 14px 18px; margin: 16px 0; }
   h2 { font-size: 20px; margin: 24px 0 8px; }
@@ -45,29 +39,20 @@
   ul { padding-left: 22px; }
   li { margin: 4px 0; }
   a { color: var(--accent); }
-  [data-lang] { display: none; }
-  body.en [data-lang="en"], body.ru [data-lang="ru"] { display: block; }
   footer { text-align: center; color: var(--muted); font-size: 13px; margin-top: 32px; }
   @media (max-width: 480px) { h1 { font-size: 24px; } .card { padding: 18px 16px 4px; } }
 </style>
 </head>
-<body class="en">
+<body>
 <div class="wrap">
 
 <header>
   <div class="game">CosmoOdyssey: Trip to Mars</div>
-  <h1><span data-lang="en" style="display:inline">Privacy Policy &amp; License Terms</span><span data-lang="ru" style="display:none">Политика конфиденциальности и условия лицензии</span></h1>
-  <div class="meta">Brenntkopf Development · Kharkiv, Ukraine<br>
-    <span data-lang="en" style="display:inline">Effective date: October 21, 2026</span><span data-lang="ru" style="display:none">Дата вступления в силу: 21 октября 2026 г.</span>
-  </div>
-  <div class="lang">
-    <button id="btn-en" class="active" type="button">English</button>
-    <button id="btn-ru" type="button">Русский</button>
-  </div>
+  <h1>Privacy Policy &amp; License Terms</h1>
+  <div class="meta">Brenntkopf Development · Kharkiv, Ukraine<br>Effective date: October 21, 2026</div>
 </header>
 
-<!-- ============ ENGLISH ============ -->
-<main class="card" data-lang="en">
+<main class="card">
 
 <h2>1. Introduction</h2>
 <p>This Privacy Policy and License Terms (the "Policy") apply to the mobile game <strong>CosmoOdyssey: Trip to Mars</strong> (the "Game"), developed and published by <strong>Brenntkopf Development</strong> ("Developer", "we", "us"). By downloading or using the Game, you agree to this Policy. If you do not agree, please uninstall the Game.</p>
@@ -124,99 +109,7 @@
 
 </main>
 
-<!-- ============ РУССКИЙ ============ -->
-<main class="card" data-lang="ru">
-
-<h2>1. Введение</h2>
-<p>Настоящая Политика конфиденциальности и условия лицензии («Политика») относятся к мобильной игре <strong>CosmoOdyssey: Trip to Mars</strong> («Игра»), разработанной и изданной <strong>Brenntkopf Development</strong> («Разработчик», «мы»). Загружая или используя Игру, вы соглашаетесь с настоящей Политикой. Если вы не согласны, пожалуйста, удалите Игру.</p>
-
-<h2>2. Мы не собираем ваши данные</h2>
-<div class="highlight"><strong>Коротко:</strong> Игра однопользовательская и работает офлайн на вашем устройстве. Мы не собираем, не храним, не передаём и не продаём никакие персональные данные.</div>
-<p>В частности, Игра:</p>
-<ul>
-  <li>не требует аккаунтов и регистрации;</li>
-  <li>не собирает имя, e-mail, номер телефона, местоположение и идентификаторы устройства;</li>
-  <li>не получает доступ к контактам, камере, микрофону, фото и файлам;</li>
-  <li>не содержит рекламы, аналитики и сторонних средств отслеживания;</li>
-  <li>не содержит внутриигровых покупок, пожертвований и подписок;</li>
-  <li>не имеет онлайн-мультиплеера, чатов и социальных функций;</li>
-  <li>не отправляет игровые данные на наши серверы.</li>
-</ul>
-
-<h2>3. Данные на вашем устройстве</h2>
-<p>Игра может сохранять ваш прогресс и настройки <strong>только локально на вашем устройстве</strong>. У нас нет доступа к этим данным. Они удаляются при удалении Игры или очистке её данных в настройках устройства. Ваше устройство или Google могут создавать резервные копии данных приложения согласно вашим настройкам; такие копии регулируются условиями и политикой конфиденциальности Google.</p>
-
-<h2>4. Google Play и третьи лица</h2>
-<p>Игра распространяется через Google Play. Google может обрабатывать определённую информацию при загрузке Игры в соответствии с <a href="https://policies.google.com/privacy" rel="noopener">Политикой конфиденциальности Google</a>. Сама Игра не использует сторонние сервисы, собирающие данные пользователей.</p>
-
-<h2>5. Дети</h2>
-<p>Поскольку Игра не собирает персональную информацию, она сознательно не собирает данные ни от кого, включая детей. Родителям и опекунам рекомендуется контролировать использование любых приложений несовершеннолетними.</p>
-
-<h2>6. Ваши права</h2>
-<p>В соответствии с такими законами, как GDPR и CCPA, вы можете иметь право на доступ, исправление или удаление своих персональных данных. Поскольку мы не обрабатываем ваши персональные данные, нам нечего предоставлять или удалять. Вы можете в любой момент удалить все данные Игры, удалив саму Игру.</p>
-
-<h2>7. Лицензия и ограничения</h2>
-<p>Мы предоставляем вам ограниченную, личную, неисключительную, непередаваемую, отзывную лицензию на установку и использование Игры на вашем устройстве в <strong>частных некоммерческих целях</strong>. Игра и всё её содержимое (код, графика, музыка, звук, тексты, названия и логотипы) принадлежат Brenntkopf Development и защищены авторским правом и иными законами.</p>
-<p>Без нашего письменного разрешения вы <strong>не вправе</strong>:</p>
-<ul>
-  <li>продавать, перепродавать, сдавать в аренду, одалживать или иным образом коммерчески использовать Игру;</li>
-  <li>изменять Игру, создавать производные произведения или моды на её основе;</li>
-  <li>декомпилировать, проводить обратную разработку, извлекать код или ресурсы Игры;</li>
-  <li>копировать, перепаковывать, повторно загружать или распространять Игру и её установочные файлы;</li>
-  <li>использовать читы, взломы и неавторизованные инструменты, изменяющие работу Игры;</li>
-  <li>удалять или изменять уведомления об авторских правах и правах собственности.</li>
-</ul>
-<p>Вы можете публиковать личные видео игрового процесса, скриншоты и обзоры в некоммерческих целях, если не выдаёте наши материалы за свои. Нарушение этих правил может привести к прекращению лицензии и судебным мерам, включая обращения к платформам с требованием удалить контент.</p>
-
-<h2>8. Отказ от гарантий и ответственность</h2>
-<p>Игра предоставляется «как есть», без каких-либо гарантий. В максимально допустимой законом степени Brenntkopf Development не несёт ответственности за косвенный или сопутствующий ущерб и потерю данных, возникшие в связи с использованием Игры. Ничто в настоящей Политике не ограничивает ответственность, которую нельзя ограничить по закону.</p>
-
-<h2>9. Изменения</h2>
-<p>Мы можем время от времени обновлять настоящую Политику. Актуальная версия всегда доступна на этой странице с обновлённой датой. Если мы когда-либо введём сбор данных, мы сначала обновим Политику и получим согласие там, где это требуется.</p>
-
-<h2>10. Применимое право</h2>
-<p>Настоящая Политика регулируется законодательством Украины. Императивные нормы о защите прав потребителей страны вашего проживания остаются неизменными.</p>
-
-<h2>11. Контакты</h2>
-<p><strong>Brenntkopf Development</strong><br>Харьков, Украина<br>E-mail: <a href="mailto:illia.khudokormov@gmail.com">illia.khudokormov@gmail.com</a></p>
-
-</main>
-
 <footer>© 2026 Brenntkopf Development. All rights reserved.</footer>
 </div>
-
-<script>
-(function () {
-  var body = document.body;
-  var btnEn = document.getElementById('btn-en');
-  var btnRu = document.getElementById('btn-ru');
-
-  function setLang(lang) {
-    body.className = lang;
-    document.documentElement.lang = lang;
-    btnEn.classList.toggle('active', lang === 'en');
-    btnRu.classList.toggle('active', lang === 'ru');
-    // inline spans in header
-    var spans = document.querySelectorAll('header [data-lang]');
-    for (var i = 0; i < spans.length; i++) {
-      spans[i].style.display = spans[i].getAttribute('data-lang') === lang ? 'inline' : 'none';
-    }
-    try { localStorage.setItem('lang', lang); } catch (e) {}
-  }
-
-  btnEn.addEventListener('click', function () { setLang('en'); });
-  btnRu.addEventListener('click', function () { setLang('ru'); });
-
-  var initial = 'en';
-  try {
-    var saved = localStorage.getItem('lang');
-    if (saved === 'en' || saved === 'ru') initial = saved;
-    else if ((navigator.language || '').toLowerCase().indexOf('ru') === 0) initial = 'ru';
-  } catch (e) {}
-  if (location.hash === '#ru') initial = 'ru';
-  if (location.hash === '#en') initial = 'en';
-  setLang(initial);
-})();
-</script>
 </body>
 </html>
